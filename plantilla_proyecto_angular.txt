@@ -1,0 +1,64 @@
+
+Mi Proyecto Angular - Implementación de Arquitecturas Basadas en Componentes y Formularios Reactivos
+
+Descripción del Proyecto:
+[Escribe aquí la descripción de tu proyecto, explicando qué hace, cómo lo implementaste, y los aprendizajes obtenidos durante el curso.]
+
+Características del Proyecto:
+
+1. Uso de EventEmitter con @Output:
+   - Un componente hijo emite un evento hacia su componente padre utilizando `@Output` y `EventEmitter`. El componente padre escucha este evento y realiza una acción.
+
+2. Configuración de Rutas con Redirección y Componentes:
+   - Se ha configurado una ruta en el `app.module.ts` que redirige a `/inicio` y otra que carga un componente específico.
+
+3. Uso de `router-outlet` como enrutador raíz:
+   - En el archivo `app.component.html`, se utiliza `<router-outlet></router-outlet>` para gestionar las rutas y cargar los componentes dinámicamente.
+
+4. Formulario Reactivo con `FormBuilder`:
+   - En el componente de formulario, se configura un `FormGroup` con al menos dos campos utilizando `FormBuilder`.
+
+5. Vinculación de Controles a Elementos HTML:
+   - Los controles del formulario se vinculan con los campos de entrada en el HTML utilizando `formControlName`.
+
+6. Uso de `@Output` para Recibir Eventos del Componente Hijo:
+   - El componente padre recibe eventos emitidos desde el hijo utilizando `@Output` para manejar la comunicación entre componentes.
+
+7. Validaciones Personalizadas en Formularios:
+   - Se implementa una validación personalizada (ej. validación de teléfono) junto con una validación de campo requerido en un formulario.
+
+8. Mensajes de Error con `ngIf` y `hasError`:
+   - Se muestran mensajes de error en el HTML del formulario utilizando `ngIf` y el método `hasError` para validar las condiciones de error.
+
+9. Redux - Reducers y Acciones para Manejo de Elementos:
+   - Se implementan acciones de agregar y eliminar elementos en una colección utilizando Redux con `@ngrx/store`.
+
+10. Funcionalidad de Voto con Redux:
+   - Se implementa una funcionalidad de voto a favor y voto negativo sobre elementos de una lista, utilizando Redux para manejar el estado de cada elemento.
+
+Instrucciones para Correr el Proyecto
+
+1. Clona el repositorio:
+   git clone https://github.com/tu-usuario/mi-proyecto-angular.git
+
+2. Accede al directorio del proyecto:
+   cd mi-proyecto-angular
+
+3. Instala las dependencias:
+   npm install
+
+4. Ejecuta la aplicación:
+   ng serve
+
+5. Abre el navegador y accede a:
+   http://localhost:4200
+
+Tecnologías Utilizadas:
+- Angular 12+
+- RxJS
+- @ngrx/store
+- Reactive Forms
+- EventEmitter
+
+Repositorio:
+[Enlace al repositorio en GitHub](https://github.com/tu-usuario/mi-proyecto-angular)
